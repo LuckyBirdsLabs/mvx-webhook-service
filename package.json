@@ -1,0 +1,26 @@
+{
+  "name": "mvx-webhook-service",
+  "version": "1.0.0",
+  "description": "A high-performance webhook service for MultiversX Event Notifier",
+  "author": "Project X",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "check-signature": "tsx src/check_signature.ts",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "@multiversx/sdk-core": "^15.3.2",
+    "axios": "^1.13.2",
+    "axios-retry": "^4.5.0",
+    "moment": "^2.30.1",
+    "ts-dotenv": "^0.9.1",
+    "tslog": "^4.10.2",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.7",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
